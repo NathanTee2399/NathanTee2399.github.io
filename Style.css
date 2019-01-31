@@ -1,0 +1,42 @@
+h1 {
+    color: black;
+    }
+body {
+     background-color:antiquewhite;
+    font-family:monospace;
+    font-size: 1.3em;
+}
+/*** column ***/
+
+#left-col {
+    background-color:lightcoral;
+    height: 116vh;
+}
+
+#right-col {
+    background-color: ghostwhite;
+        
+}
+
+/********Work Experience styling ***/
+.section-head{
+    color: lightblue;
+    font-family:oswald;
+}
+
+/***bullet***/
+ul{
+    list-style: none;
+    
+}
+/*** margin ***/
+
+#education {
+    margin-top: 2em;
+}
+
+/*** DP***/
+#profile-pic {
+    border-radius: 50%;
+}
+
