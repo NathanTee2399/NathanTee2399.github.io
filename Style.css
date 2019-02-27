@@ -1,42 +1,92 @@
-h1 {
-    color: black;
-    }
-body {
-     background-color:antiquewhite;
-    font-family:monospace;
-    font-size: 1.3em;
-}
-/*** column ***/
-
-#left-col {
-    background-color:lightcoral;
-    height: 116vh;
+body, html {
+  height: 100%;
 }
 
-#right-col {
-    background-color: ghostwhite;
-        
+* {
+  box-sizing: border-box;
 }
 
-/********Work Experience styling ***/
-.section-head{
-    color: lightblue;
-    font-family:oswald;
+.bg-image {
+  /* The image used */
+  background-image: url("5.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-/***bullet***/
-ul{
-    list-style: none;
-    
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
 }
-/*** margin ***/
 
-#education {
-    margin-top: 2em;
+h2 {
+    text-align: justify
+}
+a:link, a:visited {
+ 
+  color: black;
+  padding: 14px 25px;
+  text-align: center; 
+  text-decoration: none;
+  display: inline-block;
 }
 
-/*** DP***/
-#profile-pic {
-    border-radius: 50%;
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
