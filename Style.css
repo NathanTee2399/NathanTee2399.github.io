@@ -8,7 +8,11 @@ body, html {
 
 .bg-image {
   /* The image used */
+<<<<<<< HEAD
   background-image: url("8.JPG");
+=======
+  background-image: url("8.jpg");
+>>>>>>> 3bf044539d27412bf127c5bbeb1c5c6df57eda5f
 
   /* Add the blur effect */
   filter: blur(8px);
